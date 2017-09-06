@@ -6,6 +6,10 @@
     "type": "git",
     "url": "git://github.com/react-boilerplate/react-boilerplate.git"
   },
+  "directories": {
+    "lib": "api",
+    "test": "test/"
+  },
   "engines": {
     "npm": ">=3",
     "node": ">=5"
@@ -173,7 +177,20 @@
       "express",
       "ip",
       "minimist",
-      "sanitize.css"
+      "sanitize.css",
+      "body-parser",
+      "compression",
+      "cors",
+      "feathers",
+      "feathers-configuration",
+      "feathers-errors",
+      "feathers-hooks",
+      "feathers-hooks-common",
+      "feathers-rest",
+      "feathers-socketio",
+      "helmet",
+      "serve-favicon",
+      "winston"
     ],
     "include": [
       "core-js",
@@ -210,11 +227,21 @@
   },
   "dependencies": {
     "babel-polyfill": "6.20.0",
+    "body-parser": "^1.17.2",
     "chalk": "1.1.3",
-    "compression": "1.6.2",
+    "compression": "^1.7.0",
+    "cors": "^2.8.4",
     "cross-env": "3.1.3",
     "express": "4.14.0",
+    "feathers": "^2.2.0",
+    "feathers-configuration": "^0.4.1",
+    "feathers-errors": "^2.9.2",
+    "feathers-hooks": "^2.0.2",
+    "feathers-hooks-common": "^3.7.2",
+    "feathers-rest": "^1.8.0",
+    "feathers-socketio": "^2.0.0",
     "fontfaceobserver": "2.0.7",
+    "helmet": "^3.8.1",
     "immutable": "3.8.1",
     "intl": "1.2.5",
     "invariant": "2.2.2",
@@ -234,9 +261,11 @@
     "redux-saga": "0.14.0",
     "reselect": "2.5.4",
     "sanitize.css": "4.1.0",
+    "serve-favicon": "^2.4.3",
     "styled-components": "1.1.2",
     "warning": "3.0.0",
-    "whatwg-fetch": "2.0.1"
+    "whatwg-fetch": "2.0.1",
+    "winston": "^2.3.1"
   },
   "devDependencies": {
     "babel-cli": "6.18.0",
@@ -259,7 +288,7 @@
     "coveralls": "2.11.15",
     "css-loader": "0.26.1",
     "enzyme": "2.6.0",
-    "eslint": "3.11.1",
+    "eslint": "^4.6.1",
     "eslint-config-airbnb": "13.0.0",
     "eslint-config-airbnb-base": "10.0.1",
     "eslint-import-resolver-webpack": "0.8.0",
@@ -276,6 +305,7 @@
     "imports-loader": "0.6.5",
     "jest-cli": "18.0.0",
     "lint-staged": "3.2.1",
+    "mocha": "^3.5.0",
     "ngrok": "2.2.4",
     "node-plop": "0.5.4",
     "null-loader": "0.1.1",
@@ -283,6 +313,8 @@
     "plop": "1.7.3",
     "pre-commit": "1.1.3",
     "react-addons-test-utils": "15.4.1",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
     "rimraf": "2.5.4",
     "shelljs": "0.7.5",
     "sinon": "2.0.0-pre",
